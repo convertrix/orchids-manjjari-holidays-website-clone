@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Lato:wght@400;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-background: #ffffff;
+  --color-foreground: #444444;
+
+  --color-card: #ffffff;
+  --color-card-foreground: #444444;
+
+  --color-popover: #ffffff;
+  --color-popover-foreground: #444444;
+
+  --color-primary: #8eb93e;
+  --color-primary-foreground: #ffffff;
+
+  --color-secondary: #4a6a1f;
+  --color-secondary-foreground: #ffffff;
+
+  --color-muted: #f9f9f9;
+  --color-muted-foreground: #737373;
+
+  --color-accent: #191c14;
+  --color-accent-foreground: #ffffff;
+
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #fafafa;
+
+  --color-border: #e1e1e1;
+  --color-input: #e1e1e1;
+  --color-ring: #8eb93e;
+
+  --color-chart-1: #8eb93e;
+  --color-chart-2: #4a6a1f;
+  --color-chart-3: #191c14;
+  --color-chart-4: #547721;
+  --color-chart-5: #e1e1e1;
+
+  --color-sidebar: #ffffff;
+  --color-sidebar-foreground: #444444;
+  --color-sidebar-primary: #8eb93e;
+  --color-sidebar-primary-foreground: #ffffff;
+  --color-sidebar-accent: #f9f9f9;
+  --color-sidebar-accent-foreground: #8eb93e;
+  --color-sidebar-border: #e1e1e1;
+  --color-sidebar-ring: #8eb93e;
+
+  --color-heading: #547721;
+  --color-off-white: #f9f9f9;
+  --color-dark-accent: #191c14;
+
+  --font-display: "Montserrat", sans-serif;
+  --font-body: "Lato", sans-serif;
+
+  --radius-lg: 5px;
+  --radius-md: 3px;
+  --radius-sm: 2px;
+
+  --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+
+  @keyframes accordion-down {
+    from {
+      height: 0;
+    }
+    to {
+      height: var(--radix-accordion-content-height);
+    }
+  }
+  @keyframes accordion-up {
+    from {
+      height: var(--radix-accordion-content-height);
+    }
+    to {
+      height: 0;
+    }
+  }
+}
+
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: #e1e1e1;
+  }
+
+  :root {
+    --background: #ffffff;
+    --foreground: #444444;
+    --card: #ffffff;
+    --card-foreground: #444444;
+    --popover: #ffffff;
+    --popover-foreground: #444444;
+    --primary: #8eb93e;
+    --primary-foreground: #ffffff;
+    --secondary: #4a6a1f;
+    --secondary-foreground: #ffffff;
+    --muted: #f9f9f9;
+    --muted-foreground: #737373;
+    --accent: #191c14;
+    --accent-foreground: #ffffff;
+    --destructive: #ef4444;
+    --destructive-foreground: #fafafa;
+    --border: #e1e1e1;
+    --input: #e1e1e1;
+    --ring: #8eb93e;
+    --radius: 5px;
+    --sidebar-background: #ffffff;
+    --sidebar-foreground: #444444;
+    --sidebar-primary: #8eb93e;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #f9f9f9;
+    --sidebar-accent-foreground: #8eb93e;
+    --sidebar-border: #e1e1e1;
+    --sidebar-ring: #8eb93e;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    font-size: 15px;
+    line-height: 1.6;
+    background-color: var(--background);
+    color: var(--foreground);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+    color: var(--color-heading);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1.2;
+  }
+
+  h2 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  a {
+    transition: all 0.3s ease;
+    text-decoration: none;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  section {
+    @apply py-20;
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: radial-gradient(circle, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+  }
+
+  .card-shadow {
+    box-shadow: var(--shadow-card);
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white font-body font-bold uppercase text-[13px] px-6 py-3 rounded-[5px] transition-colors hover:bg-dark-accent;
+  }
+
+  .nav-link {
+    @apply font-display font-semibold uppercase text-[14px] tracking-[0.5px] hover:text-primary;
+  }
+}
