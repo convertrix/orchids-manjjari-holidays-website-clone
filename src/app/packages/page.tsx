@@ -1,12 +1,13 @@
 "use client";
 
+import { Suspense } from "react";
 import Header from "@/components/sections/header";
 import Footer from "@/components/sections/footer";
 import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { packages, tourCategories } from "@/lib/config";
-import { Clock, IndianRupee, Suspense } from "lucide-react";
+import { Clock, IndianRupee } from "lucide-react";
 
 function PackagesContent() {
   const searchParams = useSearchParams();
@@ -113,7 +114,9 @@ export default function PackagesPage() {
       </section>
       <section className="py-[80px] bg-[#f9f9f9]">
         <div className="container mx-auto max-w-[1200px] px-[15px]">
-          <PackagesContent />
+          <Suspense fallback={<div className="text-center py-20">Loading packages...</div>}>
+            <PackagesContent />
+          </Suspense>
         </div>
       </section>
       <Footer />
