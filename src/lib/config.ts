@@ -8,6 +8,10 @@ export const siteConfig = {
   phoneRaw: "+917377511396",
   email: "info@manjjariholidays.in",
   emailDomestic: "domestic@manjjariholidays.in",
+  bookingEmail: "booknow@manjjariholidays.com",
+  whatsappNumber: "+91 8249327115",
+  whatsappRaw: "918249327115",
+  tokenPercentage: 20, // 20% of total as token/advance amount
   address: {
     line1: "Near Sum Hospital Road",
     line2: "Kalinganagar, Bhubaneswar",
@@ -25,7 +29,7 @@ export const siteConfig = {
     youtube: "https://youtube.com/@manjjariholidays",
   },
   mapEmbed:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.098!2d85.824!3d20.296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sNear+Sum+Hospital+Road%2C+Kalinganagar%2C+Bhubaneswar!5e0!3m2!1sen!2sin!4v1700000000000",
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3742.098!2d85.824!3d20.296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190900040687a9%3A0x7a1e4f7b4f52e62d!2sManjjari%20Holidays!5e0!3m2!1sen!2sin!4v1700000000000",
 };
 
 export const packages = [
@@ -180,6 +184,7 @@ export const services = [
     id: "cab-services",
     name: "Cab Services",
     icon: "car",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?w=600&h=400&fit=crop&q=80",
     description: "Our own fleet of well-maintained vehicles with experienced chauffeurs for comfortable travel across Odisha and beyond.",
     features: ["AC & Non-AC Vehicles", "GPS Tracked", "24/7 Availability", "Professional Drivers", "Sedan, SUV, Tempo Traveller"],
   },
@@ -187,6 +192,7 @@ export const services = [
     id: "hotel-booking",
     name: "Hotel Booking",
     icon: "hotel",
+    image: "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&h=400&fit=crop&q=80",
     description: "Premium hotel and homestay arrangements across all destinations with best price guarantee.",
     features: ["Budget to Luxury", "Heritage Properties", "Eco Resorts", "Royal Palaces", "Home Stays"],
   },
@@ -194,6 +200,7 @@ export const services = [
     id: "tour-planning",
     name: "Tour Planning",
     icon: "map",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop&q=80",
     description: "Customized tour packages tailored to your interests, budget, and schedule by our expert travel planners.",
     features: ["Custom Itineraries", "Group Tours", "Solo Travel", "Honeymoon Packages", "Corporate Tours"],
   },
@@ -201,6 +208,7 @@ export const services = [
     id: "guide-services",
     name: "Guide Services",
     icon: "users",
+    image: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?w=600&h=400&fit=crop&q=80",
     description: "Professional multilingual guides with deep knowledge of local culture, history and traditions.",
     features: ["Multilingual Guides", "Certified Professionals", "Cultural Experts", "Wildlife Specialists", "Photography Guides"],
   },

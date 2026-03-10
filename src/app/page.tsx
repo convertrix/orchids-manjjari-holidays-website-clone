@@ -11,6 +11,7 @@ import ServicesSection from "@/components/sections/services";
 import ClientTestimonials from "@/components/sections/client-testimonials";
 import VideoTestimonials from "@/components/sections/video-testimonials";
 import VacationCTA from "@/components/sections/vacation-cta";
+import GoogleMapSection from "@/components/sections/google-map-section";
 import Footer from "@/components/sections/footer";
 
 export default function Home() {
@@ -27,7 +28,9 @@ export default function Home() {
       <ClientTestimonials />
       <VideoTestimonials />
       <VacationCTA />
+      <GoogleMapSection />
       <Footer />
     </div>
   );
 }
+
