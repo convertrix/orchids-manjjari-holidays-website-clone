@@ -49,9 +49,9 @@ const HeroSlider: React.FC = () => {
             </div>
             <div className="relative h-full flex items-center justify-center text-center px-4">
               <div className="max-w-[800px]">
-                <p className="font-display font-semibold text-[#8eb93e] text-[16px] md:text-[18px] uppercase tracking-[3px] mb-4">
+                <span className="inline-block bg-[#8eb93e]/20 backdrop-blur-sm border border-[#8eb93e]/60 text-[#8eb93e] font-display font-bold text-[14px] md:text-[16px] uppercase tracking-[4px] px-6 py-2.5 rounded-full mb-6 shadow-lg">
                   {slide.subtitle}
-                </p>
+                </span>
                 <h1 className="font-display font-extrabold text-white text-[32px] md:text-[48px] lg:text-[56px] leading-[1.1] uppercase mb-8 drop-shadow-md">
                   {slide.title}
                 </h1>

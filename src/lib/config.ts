@@ -4,8 +4,8 @@ export const siteConfig = {
   tagline: "Tour & Travel Management Company",
   description:
     "Manjjari Holidays offers premium tour planning and management services in Odisha, Chhattisgarh & India. Eco tours, tribal tours, photography tours, cab services & hotel booking.",
-  phone: "+91 73775 11396",
-  phoneRaw: "+917377511396",
+  phone: "+91 99387 30115",
+  phoneRaw: "+919938730115",
   email: "info@manjjariholidays.in",
   emailDomestic: "domestic@manjjariholidays.in",
   bookingEmail: "booknow@manjjariholidays.com",

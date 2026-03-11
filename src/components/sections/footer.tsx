@@ -93,12 +93,9 @@ const Footer = () => {
                 <Phone className="text-[#8eb93e] mr-3 shrink-0" size={18} />
                 <a href={`tel:${siteConfig.phoneRaw}`} className="hover:text-[#8eb93e] transition-colors">{siteConfig.phone}</a>
               </div>
-              <div className="flex items-start">
-                <Mail className="text-[#8eb93e] mr-3 mt-1 shrink-0" size={18} />
-                <div className="flex flex-col">
-                  <a href={`mailto:${siteConfig.email}`} className="hover:text-[#8eb93e] transition-colors mb-1">{siteConfig.email}</a>
-                  <a href={`mailto:${siteConfig.emailDomestic}`} className="hover:text-[#8eb93e] transition-colors">{siteConfig.emailDomestic}</a>
-                </div>
+              <div className="flex items-center">
+                <Mail className="text-[#8eb93e] mr-3 shrink-0" size={18} />
+                <a href={`mailto:${siteConfig.bookingEmail}`} className="hover:text-[#8eb93e] transition-colors">{siteConfig.bookingEmail}</a>
               </div>
             </div>
           </div>
