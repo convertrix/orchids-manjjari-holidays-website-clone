@@ -33,13 +33,17 @@ const Header = () => {
               <li><Link href="/contact" className="hover:text-[#8eb93e] transition-colors">Contact</Link></li>
             </ul>
           </div>
-          <div className="flex items-center gap-x-4">
-            <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center gap-1.5 hover:text-[#8eb93e] transition-colors">
-              <Phone size={13} /> <span className="hidden sm:inline">{siteConfig.phone}</span>
-            </a>
+            <div className="flex items-center gap-x-4">
+              <a href={`tel:${siteConfig.landlineRaw}`} className="flex items-center gap-1.5 hover:text-[#8eb93e] transition-colors">
+                <Phone size={13} /> <span className="hidden sm:inline">{siteConfig.landline}</span>
+              </a>
+              <span className="hidden md:block w-px h-4 bg-white/20" />
+              <a href={`tel:${siteConfig.phoneRaw}`} className="flex items-center gap-1.5 hover:text-[#8eb93e] transition-colors">
+                <Phone size={13} /> <span className="hidden sm:inline">{siteConfig.phone}</span>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
 
       {/* Main Navigation */}
       <div className="bg-white shadow-sm relative z-50">

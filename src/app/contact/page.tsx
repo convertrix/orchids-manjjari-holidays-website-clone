@@ -65,7 +65,8 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h4 className="font-display font-semibold text-[14px] text-[#191c14] uppercase mb-1">Phone</h4>
-                    <a href={`tel:${siteConfig.phoneRaw}`} className="font-body text-[14px] text-[#666] hover:text-[#8eb93e]">{siteConfig.phone}</a>
+                    <a href={`tel:${siteConfig.phoneRaw}`} className="font-body text-[14px] text-[#666] hover:text-[#8eb93e] block">{siteConfig.phone}</a>
+                    <a href={`tel:${siteConfig.landlineRaw}`} className="font-body text-[14px] text-[#666] hover:text-[#8eb93e] block">{siteConfig.landline}</a>
                   </div>
                 </div>
                 <div className="flex items-start gap-4">
