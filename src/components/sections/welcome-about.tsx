@@ -33,10 +33,10 @@ export default function WelcomeAboutSection() {
             </h2>
             <div className="max-w-[500px]">
               <p className="font-body text-[15px] text-[#cccccc] leading-[1.7] mb-6">
-                Manjjari Holidays is a Travel and Tour Management Company based in Bhubaneswar, Odisha. We are one of the premium brands offering proficient tour planning and management services to esteemed travelers. Entrusted with high ethics, we believe in delivering the best of tour and travel services across Odisha, Chhattisgarh, and all of India.
+                Welcome to Manjjari Holidays, widely regarded as the best travel agency in Bhubaneswar, Odisha. As a premier travel company in Bhubaneswar, we organize expertly crafted tours and offer complete travel management services to travelers worldwide. If you are looking for the best tour operators in Odisha to handle your journey, our deeply knowledgeable team provides the ultimate local expertise.
               </p>
               <p className="font-body text-[15px] text-[#cccccc] leading-[1.7] mb-8">
-                From eco wildlife tours to tribal experiences, from photography tours to heritage walks - we curate unforgettable journeys with our own fleet of vehicles, expert guides, and deep local knowledge.
+                From eco wildlife tours to tribal experiences, and from photography excursions to heritage walks—we are the best tour and travels in Bhubaneswar for curating unforgettable vacation packages. Experience India with our private fleet of vehicles, top travel agents in Bhubaneswar, and genuine local hospitality.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link

@@ -105,7 +105,7 @@ const Footer = () => {
         </div>
         <div className="mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-[13px] text-white/80 font-medium">
-            &copy; {new Date().getFullYear()} {siteConfig.name} | All Rights Reserved.
+            &copy; {new Date().getFullYear()} {siteConfig.name} - Best Travel Agency in Bhubaneswar | All Rights Reserved.
           </p>
           <div className="flex items-center gap-3">
             <a href={siteConfig.social.facebook} target="_blank" rel="noopener noreferrer" className="w-9 h-9 flex items-center justify-center bg-[#8eb93e] rounded-full hover:bg-[#191c14] transition-colors"><Facebook size={16} fill="white" /></a>

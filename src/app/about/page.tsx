@@ -40,13 +40,13 @@ export default function AboutPage() {
             <div className="w-full lg:w-1/2">
               <h2 className="font-display font-bold text-[32px] text-[#547721] uppercase mb-6 text-left">Welcome to {siteConfig.name}</h2>
               <p className="font-body text-[15px] text-[#444] leading-[1.8] mb-4">
-                {siteConfig.name} is a premier Travel and Tour Management Company based in Bhubaneswar, Odisha. We are one of the trusted brands offering proficient tour planning and management services to esteemed travelers from across the globe.
+                {siteConfig.name} is widely recognized as the <strong>best travel agency in Bhubaneswar, Odisha</strong>. As a premier travel company in Bhubaneswar, we offer highly proficient tour planning and absolute local expertise to esteemed travelers from across the globe.
               </p>
               <p className="font-body text-[15px] text-[#444] leading-[1.8] mb-4">
-                We specialize in curating niche tours across Odisha, Chhattisgarh, Central India & Northeast India. Our expertise spans Photography Tours, Tribal & Ethnic Tours, Wildlife & Eco Tours, Trekking, Cultural Heritage, and Special Interest Tours.
+                Ranked among the <strong>best tour operators in Odisha</strong>, we specialize in curating exceptionally designed niche journeys across Odisha, Chhattisgarh, Central India, and Northeast India. Our itineraries beautifully cover Photography Tours, Tribal & Ethnic Tours, Wildlife & Eco Tours, Cultural Heritage, and Special Interest sightseeing. 
               </p>
               <p className="font-body text-[15px] text-[#444] leading-[1.8] mb-6">
-                With our own fleet of well-maintained vehicles, professional guides, and deep local knowledge, we ensure every journey is safe, comfortable, and memorable.
+                With our own private fleet of modern vehicles, some of the <strong>best travel agents in Bhubaneswar</strong>, and deeply knowledgeable local guides, we ensure every aspect of your journey is safe, comfortable, and truly memorable.
               </p>
               <div className="flex items-center gap-4 text-[14px] text-[#666]">
                 <MapPin size={18} className="text-[#8eb93e]" />

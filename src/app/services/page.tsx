@@ -29,7 +29,7 @@ export default function ServicesPage() {
           <div className="text-center mb-[50px]">
             <h2 className="font-display font-bold text-[32px] text-[#547721] uppercase mb-4">What We Offer</h2>
             <p className="font-body text-[16px] text-[#666] max-w-[600px] mx-auto">
-              {siteConfig.name} is the tour designer of Odisha, Chhattisgarh, Central India & Northeast India, curating niche products for every type of traveler.
+              Known as the <strong>best travel agency in Bhubaneswar</strong>, {siteConfig.name} is the premier tour designer of Odisha, Chhattisgarh, Central India, and Northeast India, curating niche travel products for every type of traveler.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
